@@ -1,0 +1,396 @@
+body{
+  background-color:#FBFBFB ;
+  
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-image: url('./compontes/2.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+/* Navbar styles */
+.mr-auto {
+color: #151D20;
+}
+.logoname{
+  display: inline-block;
+  margin-left:20px ;
+ 
+}
+
+
+
+/* Button styles */
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Common button styles */
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style for the Sign Up button */
+.button.signup {
+
+  color: #151D20;
+  width: 124px;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border: 1px solid var(--Blue-Gray-900, #151D20);
+border-radius: 4px;
+color: #151D20;
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+}
+
+/* Style for the Login button */
+.button.login {
+  background: rgba(35, 135, 192, 0.38);
+  width: 124px;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 4px;
+color: #151D20;
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+}
+ .imgmain{
+  margin: 0%;
+  right: 0;
+  z-index: 1;
+  opacity: 1;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 1;
+ }
+
+.content {
+  flex: 1;
+  padding: 70px;
+  color: #486284;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  flex: 1; 
+margin-top: 10%;
+}
+
+.content h3 {
+  font-size: 48px;
+}
+
+.content p {
+  color: #929294;
+  font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+
+}
+
+.book, .see{
+ 
+  flex: 1;
+  color: #486284;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  font-family: 'Roboto', sans-serif;
+  width: 200px;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 4px;
+color: #151D20;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+margin-right: 20px;
+margin-top: 10%;
+}
+
+.book {
+  background: rgba(35, 135, 192, 0.38); /* Background color with transparency */
+  border: none; /* Border with transparency */
+}
+
+.see {
+  background-color: transparent; /* Transparent background color */
+  border: none; /* No border */
+}
+ .pro{
+  display:flex;
+  margin-top: 10%;
+ }
+ h4{
+  font-size: 48px;
+  margin-right: 8%;
+
+ }
+
+ .about{
+
+  flex: 1;
+  padding: 70px;
+  padding-top: 250px;
+  color: #486284;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  flex: 1; 
+  max-width: 40%; 
+ 
+  mix-blend-mode: multiply;
+ }
+
+ .container{
+  background: #FBFBFB;
+  width: 100%;
+  height: 1000px;
+ 
+ }
+
+ .about h3{
+  font-size: 48px;
+ }
+
+.about p{
+  color: #929294;
+  font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+padding-top: 5%;
+padding-bottom: 5%;
+}
+
+.imgabout{
+  border: 25px solid  rgba(35, 135, 192, 0.38);
+  position: absolute;
+  width: 575px;
+  height: 470.455px;
+  flex-shrink: 0;
+  right: 0;
+  z-index: 1;
+  margin-right: 5%;
+}
+.seemore{
+text-align: center;
+background: #FBFBFB;
+}
+.seemore h3{
+  font-size: 35px;
+  color: #486284;
+ }
+
+.seemore p{
+  align-items: center;
+  color: #929294;
+  font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+padding-top: 5%;
+padding-bottom: 5%;
+
+}
+.pro{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+} 
+.firsttop{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;}
+h4{
+  flex: 1;
+  color: #486284;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  top: 0;
+  flex: 1; 
+  max-width: 30%; 
+}
+
+
+  
+.pic1{
+  border: 15px solid  rgb(255, 255, 255);
+  width: 368px;
+  height: 287px;
+  flex-shrink: 0;
+  z-index: 1;
+display: flex;
+flex-direction: column;
+margin: 5%;
+}
+
+.t3{
+
+  align-items: center;
+  max-width: 70%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10%;
+}
+.contacts-container{
+  background: linear-gradient(220deg, rgba(35, 135, 192, 0.38) 4.14%, #486284 57.08%);
+box-shadow: 0px 10px 15px 0px rgba(151, 151, 151, 0.12);
+width: 100%;
+height: 100vh;
+z-index: -1;
+display: flex; /* Add this */
+
+align-items: center;
+text-align: center;
+justify-content: center;
+
+}
+.info{
+ color: #FBFBFB;
+ max-width: 60%;
+}
+.info h7{
+  font-size: 50px;
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  /* Navbar styles for smaller screens */
+  .logoname {
+    margin-left: 10px;
+  }
+  .nav-options {
+    display: none;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .button {
+    width: 100%;
+  }
+
+  /* Content and About sections for smaller screens */
+  .content,
+  .about {
+    padding: 3%;
+    max-width: 100%;
+  }
+  .content h3,
+  .pro h4,
+  .firsttop h4 {
+    font-size: 28px;
+  }
+  .content p,
+  .about p,
+  .seemore p {
+    font-size: 14px;
+  }
+
+  /* Pro and First Top sections for smaller screens */
+  .pro,
+  .firsttop {
+    flex-direction: column;
+  }
+  .pro h4,
+  .firsttop h4 {
+    font-size: 24px;
+  }
+
+  /* Responsive images for smaller screens */
+  .imgabout,
+  .pic1 {
+    max-width: 100%;
+    margin: 5% auto;
+    border-width: 10px;
+  }
+}
+
+/* Responsive styles for even smaller screens */
+@media (max-width: 576px) {
+  /* Navbar styles for even smaller screens */
+  .logo {
+    font-size: 18px;
+  }
+  .logoname {
+    margin-left: 5px;
+  }
+  .button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  /* Content and About sections for even smaller screens */
+  .content h3,
+  .pro h4,
+  .firsttop h4 {
+    font-size: 24px;
+  }
+  .content p,
+  .about p,
+  .seemore p {
+    font-size: 14px;
+  }
+
+  /* Pro and First Top sections for even smaller screens */
+  .pro,
+  .firsttop {
+    flex-direction: column;
+  }
+
+  /* Responsive images for even smaller screens */
+  .imgabout,
+  .pic1 {
+    border-width: 5px;
+  }
+}
+.form-container {
+  background: linear-gradient(220deg, rgba(170, 212, 236, 0.38) 4.14%, #99c6d4 57.08%);
+color: #FBFBFB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the container's height to full viewport height */
+}
+
+.form {
+  color: #FBFBFB;
+border: #486284;
+
+}
