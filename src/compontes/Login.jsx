@@ -33,7 +33,7 @@ export default function Login() {
     const user = authenticateUser(email, password);
 
     if (user) {
-      setAuthenticated(true);
+      setAuthenticated(true); // Set the authenticated state to true
       navigate("/Firstoage");
     } else {
       setAuthenticated(false);
@@ -83,6 +83,10 @@ export default function Login() {
           </Form>
         )}
       </Formik>
+      {/* Display the authenticated state */}
+      <div>
+        Authenticated: {authenticated ? "Yes" : "No"}
+      </div>
     </div>
   );
 }

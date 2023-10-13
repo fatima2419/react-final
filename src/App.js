@@ -5,6 +5,7 @@ import About from './compontes/About';
 import Top3 from './compontes/Top3'
 import Contacts from './compontes/Contacts';
 import Login from './compontes/Login'
+import Complex from './Complex';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="Firstoage/" element={<Firstoage/>} />
         <Route path="About/*" element={<About/>} />
         <Route path="Top3/*" element={<Top3/>} />
+        <Route path="Complex/*" element={<Complex/>} />
         <Route path="Contacts/*" element={<Contacts/>} />
         <Route path="/login" element={<Login/>} />
       </Routes>
