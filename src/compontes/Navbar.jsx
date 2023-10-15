@@ -12,7 +12,7 @@ export default function CustomNavbar() {
   
   const logoStyle = {
     marginRight: '10px', 
-    marginLeft: '10px', // Adjust the margin as needed
+    marginLeft: '10px', 
   };
 
   return (
@@ -22,7 +22,7 @@ export default function CustomNavbar() {
         <span className="ml-2">COMPLEX.IQ</span>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav" bg="dark"> {/* Set the bg attribute to "dark" */}
+      <Navbar.Collapse id="responsive-navbar-nav" bg="dark"> 
         <Nav className="mx-auto">
           <Nav.Link as={Link} to="/Firstoage" className="text-dark">Firstoage</Nav.Link>
           <Nav.Link as={Link} to="/About" className="text-dark">About</Nav.Link>

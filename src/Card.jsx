@@ -26,7 +26,6 @@ export default function RecipeReviewCard({ complex }) {
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
           </Avatar>
         }
         action={
@@ -34,8 +33,8 @@ export default function RecipeReviewCard({ complex }) {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title={complex.name}
+        subheader={complex.location}
       />
       <CardMedia
         component="img"
@@ -70,7 +69,6 @@ export default function RecipeReviewCard({ complex }) {
             Heat 1/2 cup of the broth in a pot until simmering, add saffron and set
             aside for 10 minutes.
           </Typography>
-          {/* Add more content here */}
         </CardContent>
       </Collapse>
     </Card>

@@ -9,7 +9,6 @@ export default function Login() {
   const navigate = useNavigate();
   const [authenticated, setAuthenticated] = useState(false);
 
-  // Define the users array and authenticateUser function
   const users = [
     { name: "John", email: "john@example.com", password: "password123" },
     { name: "Alice", email: "alice@example.com", password: "password456" },
@@ -33,7 +32,7 @@ export default function Login() {
     const user = authenticateUser(email, password);
 
     if (user) {
-      setAuthenticated(true); // Set the authenticated state to true
+      setAuthenticated(true); 
       navigate("/Firstoage");
     } else {
       setAuthenticated(false);
@@ -83,10 +82,7 @@ export default function Login() {
           </Form>
         )}
       </Formik>
-      {/* Display the authenticated state */}
-      <div>
-        Authenticated: {authenticated ? "Yes" : "No"}
-      </div>
+
     </div>
   );
 }

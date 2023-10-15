@@ -394,3 +394,10 @@ color: #FBFBFB;
 border: #486284;
 
 }
+.infoo{
+  display: flex;
+  flex-direction: column;
+}
+ .box{
+  overflow-y: scroll;
+ }
