@@ -10,6 +10,7 @@ export default function about() {
         <div className="imgabout">
           <img src={slide} alt="img" width="575px" height="470.455px" />
         </div>
+        <div className="chose">
         <h3>OUR STORY WHO WE ARE</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos sed
@@ -20,7 +21,7 @@ export default function about() {
           impedit nisi eum vero iure iusto, autem magni consequuntur harum,
           eaque deleniti veniam iste nostrum. Soluta, officiis a.
         </p>
-        <button className="button login">See More</button>
+        </div>
       </div>
     
     </div>

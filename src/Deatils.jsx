@@ -3,7 +3,9 @@ import { useLocation } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Dropdown from 'react-bootstrap/Dropdown';
-
+import './App.css';
+import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 export default function Details() {
   const location = useLocation();
   const prop = location.state;
@@ -17,7 +19,7 @@ export default function Details() {
         <div className="row">
           <div className="col-md-4">
             <Card>
-              <Card.Body>
+              <Card.Body >
                 <h1>{prop.name}</h1>
                 <p>معلومات إضافية:</p>
                 <p>{prop.phone}</p>
@@ -36,6 +38,11 @@ export default function Details() {
                     ))}
                   </Dropdown.Menu>
                 </Dropdown>
+                <Link to="/Top3" state={prop}>
+  <Button variant="contained" color="primary" style={{ margin: '1%' }}>
+    Go to Top3
+  </Button>
+</Link>
               </Card.Body>
             </Card>
           </div>

@@ -6,10 +6,9 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
+import Top3 from './compontes/Top3';
 
 export default function Complex() {
   const [complexData, setComplexData] = useState([]);
@@ -38,35 +37,40 @@ export default function Complex() {
         };
 
         return (
-          <Grid container key={complex.id} justifyContent="right" alignItems="right" margin="2%">
-            <Grid item xs={8}>
-              <div style={{ textAlign: 'right' , margin:'2%' }}>
-                <Typography variant="h5" component="div">
-                  {complex.name}
-                </Typography>
-                <Typography variant="body2" color="text.secondary" className='box'>
-                  {complex.description}
-                </Typography>
-                <Link to={`/Deatils`} state={prop}>
-                  <Button variant="contained" color="primary" style={{ margin:'1%' }}>
-                    View Details
-                  </Button>
-                </Link>
-              </div>
+          <div key={complex.id} className="complex-item">
+            <Grid container justifyContent="right" alignItems="right" margin="2%">
+              <Grid item xs={8}>
+                <div style={{ textAlign: 'right', margin: '2%' }}>
+                  <Typography variant="h5" component="div">
+                    {complex.name}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary" className='box'>
+                    {complex.description}
+                  </Typography>
+                  <Link to={`/Deatils`} state={prop}>
+                    <Button variant="contained" color="primary" style={{ margin: '1%' }}>
+                      View Details
+                    </Button>
+                  </Link>
+                </div>
+              </Grid>
+              <Grid item xs={4}>
+                <Card sx={{ width: 350 }}>
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={complex.photo}
+                    alt={complex.name}
+                  />
+                </Card>
+              </Grid>
             </Grid>
-            <Grid item xs={4}>
-              <Card sx={{ width: 350 }}>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={complex.photo}
-                  alt={complex.name}
-                />
-              </Card>
-            </Grid>
-          </Grid>
+          </div>
         );
       })}
+      <div>
+        <Top3 complexData={complexData} />
+      </div>
     </div>
   );
 }

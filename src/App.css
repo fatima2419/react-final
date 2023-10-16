@@ -14,7 +14,7 @@ body{
   z-index: -2;
 }
 
-/* Navbar styles */
+
 .mr-auto {
 color: #151D20;
 }
@@ -40,7 +40,6 @@ color: #151D20;
   font-size: 16px;
 }
 
-/* Style for the Sign Up button */
 .button.signup {
 
   color: #151D20;
@@ -59,7 +58,7 @@ font-weight: 400;
 line-height: 100%;
 }
 
-/* Style for the Login button */
+
 .button.login {
   background: rgba(35, 135, 192, 0.38);
   width: 124px;
@@ -78,12 +77,11 @@ line-height: 100%;
  .imgmain{
   margin: 0%;
   right: 0;
-  z-index: 1;
+
   opacity: 1;
-  right: 0;
   bottom: 0;
-  z-index: 1;
-  opacity: 1;
+ 
+  
  }
 
 .content {
@@ -118,7 +116,7 @@ line-height: 160%;
   flex: 1;
   color: #486284;
   text-transform: uppercase;
-  top: 0;
+ top: 0;
   left: 0;
   font-family: 'Roboto', sans-serif;
   width: 200px;
@@ -207,10 +205,12 @@ padding-bottom: 5%;
 .seemore{
 text-align: center;
 background: #FBFBFB;
+padding-top: 5%;
 }
 .seemore h3{
   font-size: 35px;
   color: #486284;
+
  }
 
 .seemore p{
@@ -400,12 +400,17 @@ border: #486284;
 }
 
  .row{
-  margin-top: 5%;
+  margin-top: 4%;
+  font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;
+
  }
 
  .call{
   color: #486284;
-  font-family: 'Cairo', sans-serif;
-  font-family: 'Cairo Play', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;
+
+ }
+
+ .complex-item{
+  margin-top: 4%;
  }
