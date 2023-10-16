@@ -386,7 +386,7 @@ color: #FBFBFB;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Set the container's height to full viewport height */
+  height: 100vh; 
 }
 
 .form {
@@ -398,6 +398,14 @@ border: #486284;
   display: flex;
   flex-direction: column;
 }
- .box{
-  overflow-y: scroll;
+
+ .row{
+  margin-top: 5%;
+ }
+
+ .call{
+  color: #486284;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Cairo Play', sans-serif;
+  font-family: 'Roboto', sans-serif;
  }
