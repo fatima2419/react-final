@@ -7,7 +7,7 @@ const MyForm = () => {
         <h1>Contact Us</h1>
         <p>Have a question or need assistance? Feel free to reach out to us.</p>
         <form
-          action="https://formspree.io/brono.fatima20@gmail.com" // Replace with your Formspree email
+          action="https://formspree.io/f/xaygaaqk" // Replace with your Formspree email
           method="POST"
         >
           <div className="form-group">
