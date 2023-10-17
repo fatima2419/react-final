@@ -5,8 +5,10 @@ import Card from 'react-bootstrap/Card';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
-
-export default function Details() {
+import MyForm from './Form'; // Import your contact form component
+import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
+import { useMemo } from "react";
+export default function Details(props) {
   const location = useLocation();
   const prop = location.state;
 
@@ -15,6 +17,7 @@ export default function Details() {
   const circleBorderStyle = {
     listStyle: 'none',
   };
+
   return (
     <div>
       <div className="container">
@@ -49,11 +52,7 @@ export default function Details() {
             </Card>
           </div>
           <div className="col-md-8">
-            <img
-              className="d-block w-100"
-              src={prop.photo}
-              alt="main"
-            />
+            <img className="d-block w-100" src={prop.photo} alt="main" />
           </div>
         </div>
         <div className="row">
@@ -61,16 +60,12 @@ export default function Details() {
             <Carousel>
               {prop.photoo.map((photoo, index) => (
                 <Carousel.Item key={index}>
-                  <img
-                    className="d-block w-100"
-                    src={photoo}
-                    alt={`Slide ${index}`}
-                  />
+                  <img className="d-block w-100" src={photoo} alt={`Slide ${index}`} />
                 </Carousel.Item>
               ))}
             </Carousel>
           </div>
-          <div className='col-md-6' style={{ textAlign: "right" }}>
+          <div className="col-md-6" style={{ textAlign: "right" }}>
             <p>{prop.description}</p>
             <h5>مواصفات المجمع السكني</h5>
             <ul style={circleBorderStyle}>
@@ -81,15 +76,28 @@ export default function Details() {
                 </li>
               ))}
             </ul>
-            <h5>موقع المجمع السكني</h5>
           </div>
         </div>
         <div className="row">
-          <div className="col-md-12">
-
+          <div className="col-md-8">
+            <MyForm />
+          </div>
+          <div className='col-md-4'>
+            <h5>موقع المجمع السكني</h5>
+            {/* Integrate your Google Maps component and pass the location prop */}
+            {/* <Map
+              google={props.google}
+              initialCenter={{ lat: prop.N, lng: prop.E }}
+            >
+              <Marker
+                name={prop.name}
+                position={{ lat: prop.N, lng: prop.E }}
+              />
+            </Map> */}
           </div>
         </div>
       </div>
     </div>
   );
 }
+
