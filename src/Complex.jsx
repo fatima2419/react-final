@@ -8,7 +8,7 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
-import Top3 from './compontes/Top3';
+
 
 export default function Complex() {
   const [complexData, setComplexData] = useState([]);
@@ -34,6 +34,8 @@ export default function Complex() {
           description: complex.description,
           Hours: complex.Hours,
           location: complex.location,
+          N:complex.N,
+          E: complex.E,
         };
 
         return (
@@ -68,9 +70,7 @@ export default function Complex() {
           </div>
         );
       })}
-      <div>
-        <Top3 complexData={complexData} />
-      </div>
+      
     </div>
   );
 }

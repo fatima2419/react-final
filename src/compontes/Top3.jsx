@@ -1,13 +1,9 @@
 
 import React from "react";
 import "../App.css";
-import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import locations from "./Group 34.png";
-import Button from '@mui/material/Button';
 
-export default function Top3(props) {
-  const { complexData } = props;
+export default function Top3() {
 
  
   return (
@@ -82,19 +78,9 @@ export default function Top3(props) {
           repudiandae!
         </p>
       </div>
-
+   
       <div className="t3">
-      {complexData.slice(0, 3).map((complex) => (
-          <div className="pic1" key={complex.id}>
-            <img src={complex.photo} alt={`pic${complex.id}`} />
-            <p>{complex.description}</p>
-            <Link to={`/Deatils`} state={complex}>
-              <Button variant="contained" color="primary" style={{ margin: "1%" }}>
-                View Details
-              </Button>
-            </Link>
-          </div>
-        ))}
+
       </div>
     </div>
   );

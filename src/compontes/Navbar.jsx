@@ -8,7 +8,7 @@ export default function CustomNavbar() {
   const navigate = useNavigate();
 
   function handleLoginClick() {
-    navigate('/login');
+    navigate('/Form');
   }
 
   const logoStyle = {
@@ -20,14 +20,12 @@ export default function CustomNavbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-     
       if (window.scrollY > 100) {
-        setNavbarBackground('white'); 
+        setNavbarBackground('white');
       } else {
-        setNavbarBackground('transparent'); 
+        setNavbarBackground('transparent');
       }
     };
-
 
     window.addEventListener('scroll', handleScroll);
 
@@ -35,9 +33,7 @@ export default function CustomNavbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  const prop = {
-    
-  };
+
   return (
     <Navbar collapseOnSelect expand="lg" bg={navbarBackground} variant="dark" className="text-center fixed-top">
       <Navbar.Brand as={Link} to="/Firstoage" className="text-dark">
@@ -53,7 +49,7 @@ export default function CustomNavbar() {
           <Nav.Link as={Link} to="/About" className="text-dark">
             About
           </Nav.Link>
-          <Nav.Link as={Link} to="/Top3"  state={prop} className="text-dark">
+          <Nav.Link as={Link} to="/Top3" className="text-dark">
             Top
           </Nav.Link>
           <Nav.Link as={Link} to="/Complex" className="text-dark">
@@ -64,11 +60,9 @@ export default function CustomNavbar() {
           </Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link onClick={handleLoginClick} className="text-dark">
-            LOGIN
+          <Nav.Link onClick={handleLoginClick} className="btn btn-light  custom-btn">
+            CONTACT OUR SALES TEAM
           </Nav.Link>
-          <Nav.Link className="text-dark"> | </Nav.Link>
-          <Nav.Link className="text-dark">SIGN UP</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

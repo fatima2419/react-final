@@ -3,23 +3,25 @@ import { useLocation } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Dropdown from 'react-bootstrap/Dropdown';
-import './App.css';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
+
 export default function Details() {
   const location = useLocation();
   const prop = location.state;
 
   const hoursOptions = prop.Hours || [];
   const days = ['on site', 'on site', 'on site', 'on site', 'on site', 'not on site', 'on site'];
-
+  const circleBorderStyle = {
+    listStyle: 'none',
+  };
   return (
     <div>
       <div className="container">
         <div className="row">
           <div className="col-md-4">
             <Card>
-              <Card.Body >
+              <Card.Body>
                 <h1>{prop.name}</h1>
                 <p>معلومات إضافية:</p>
                 <p>{prop.phone}</p>
@@ -39,10 +41,10 @@ export default function Details() {
                   </Dropdown.Menu>
                 </Dropdown>
                 <Link to="/Top3" state={prop}>
-  <Button variant="contained" color="primary" style={{ margin: '1%' }}>
-    Go to Top3
-  </Button>
-</Link>
+                  <Button variant="contained" color="primary" style={{ margin: '1%' }}>
+                    Go to Top3
+                  </Button>
+                </Link>
               </Card.Body>
             </Card>
           </div>
@@ -67,6 +69,24 @@ export default function Details() {
                 </Carousel.Item>
               ))}
             </Carousel>
+          </div>
+          <div className='col-md-6' style={{ textAlign: "right" }}>
+            <p>{prop.description}</p>
+            <h5>مواصفات المجمع السكني</h5>
+            <ul style={circleBorderStyle}>
+              {prop.feat.map((feature, index) => (
+                <li key={index}>
+                  <span style={circleBorderStyle}></span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <h5>موقع المجمع السكني</h5>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-12">
+
           </div>
         </div>
       </div>

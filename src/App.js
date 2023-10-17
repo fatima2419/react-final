@@ -4,9 +4,9 @@ import Navbar from './compontes/Navbar';
 import About from './compontes/About';
 import Top3 from './compontes/Top3'
 import Contacts from './compontes/Contacts';
-import Login from './compontes/Login'
 import Complex from './Complex';
 import Deatils from './Deatils';
+import Form from './Form'
 import './App.css';
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
         <Route path="Top3/*" element={<Top3/>} />
         <Route path="Complex/*" element={<Complex/>} />
         <Route path="Contacts/*" element={<Contacts/>} />
-        <Route path="/login" element={<Login/>} />
         <Route path="/Deatils" element={<Deatils/>} />
+        <Route path="/Form" element={<Form/>} />
       </Routes>
     </div>
   );
