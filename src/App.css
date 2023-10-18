@@ -26,13 +26,11 @@ color: #151D20;
 
 
 
-/* Button styles */
 .buttons {
   display: flex;
   gap: 20px;
 }
 
-/* Common button styles */
 .button {
   padding: 10px 20px;
   border: none;
@@ -275,8 +273,7 @@ box-shadow: 0px 10px 15px 0px rgba(151, 151, 151, 0.12);
 width: 100%;
 height: 100vh;
 z-index: -1;
-display: flex; /* Add this */
-
+display: flex; 
 align-items: center;
 text-align: center;
 justify-content: center;
@@ -289,9 +286,9 @@ justify-content: center;
 .info h7{
   font-size: 50px;
 }
-/* Responsive styles for smaller screens */
+
 @media (max-width: 768px) {
-  /* Navbar styles for smaller screens */
+  
   .logoname {
     margin-left: 10px;
   }
@@ -305,9 +302,7 @@ justify-content: center;
   .button {
     width: 100%;
   }
-
-  /* Content and About sections for smaller screens */
-  .content,
+ .content,
   .about {
     padding: 3%;
     max-width: 100%;
@@ -323,7 +318,7 @@ justify-content: center;
     font-size: 14px;
   }
 
-  /* Pro and First Top sections for smaller screens */
+
   .pro,
   .firsttop {
     flex-direction: column;
@@ -333,7 +328,6 @@ justify-content: center;
     font-size: 24px;
   }
 
-  /* Responsive images for smaller screens */
   .imgabout,
   .pic1 {
     max-width: 100%;
@@ -342,9 +336,8 @@ justify-content: center;
   }
 }
 
-/* Responsive styles for even smaller screens */
 @media (max-width: 576px) {
-  /* Navbar styles for even smaller screens */
+
   .logo {
     font-size: 18px;
   }
@@ -356,7 +349,7 @@ justify-content: center;
     padding: 8px 16px;
   }
 
-  /* Content and About sections for even smaller screens */
+
   .content h3,
   .pro h4,
   .firsttop h4 {
@@ -368,13 +361,13 @@ justify-content: center;
     font-size: 14px;
   }
 
-  /* Pro and First Top sections for even smaller screens */
+ 
   .pro,
   .firsttop {
     flex-direction: column;
   }
 
-  /* Responsive images for even smaller screens */
+ 
   .imgabout,
   .pic1 {
     border-width: 5px;
@@ -415,8 +408,8 @@ border: #486284;
   margin-top: 4%;
  }
 
- .custom-btn {
-  background-color:  rgba(35, 135, 192, 0.38);
+ .custom-btn { 
+  background-color: rgba(35, 135, 192, 0.38);
   color: #fff;  
   
 }
@@ -436,7 +429,7 @@ border: #486284;
   width: 100%;
  }
  .quote-slider {
-  width: 300px; /* Adjust the width as needed */
+  width:100%;
   overflow: hidden;
   position: relative;
 }
@@ -447,7 +440,7 @@ border: #486284;
 }
 
 .quote {
-  flex: 0 0 100%; /* Make each quote take up the full width */
+  flex: 0 0 100%; 
 }
 
 .quote.active {
@@ -456,6 +449,7 @@ border: #486284;
 
 .quote-slider .quote-container {
   transform: translateX(calc(-100% * var(--quote-index, 0)));
+  
 }
 input[type="text"],
 textarea {
@@ -467,8 +461,8 @@ textarea {
   font-size: 16px;
 }
 
-/* Style for the submit button */
-button {
+
+.button2 {
   background-color: #2273c0;
   color: white;
   border: none;
@@ -476,9 +470,31 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  width: 100%;
 }
 
-/* Hover effect for the button */
+
 button:hover {
   background-color: #145a9e;
+}
+
+.contacts-container2{
+  background: linear-gradient(220deg, rgba(35, 135, 192, 0.38) 4.14%, #486284 57.08%);
+box-shadow: 0px 10px 15px 0px rgba(151, 151, 151, 0.12);
+width: 100%;
+z-index: -1;
+display: flex;
+flex-direction: row;
+align-items: center;
+text-align: center;
+font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;
+justify-content: center;
+}
+
+.info2{
+  margin-top: 2%;
+  color: #FBFBFB;
+ max-width: 40%;
+ font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;
+
 }

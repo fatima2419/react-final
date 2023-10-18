@@ -45,7 +45,7 @@ console.log(prop.N)
                     ))}
                   </Dropdown.Menu>
                 </Dropdown>
-                <Review/>
+               
               </Card.Body>
             </Card>
           </div>
@@ -77,17 +77,14 @@ console.log(prop.N)
           </div>
         </div>
         <div className="row">
-          <div className="col-md-8">
-            <MyForm />
-          </div>
-          <div className="col-md-4">
-            <h5>موقع المجمع السكني</h5>
-            <div className="map" style={{ width: '100%', height: '400px' }}>
-            
+        
+        <div  className="col-md-6">  <Review/></div>
+          <div className="col-md-6">
+            <div className="map" style={{ width: '100%', height: '50%' }}>
             <Map latitude={latitude} longitude={longitude} />
-
-            
+          
             </div>
+          
           </div>
         </div>
       </div>

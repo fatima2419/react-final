@@ -5,9 +5,9 @@ import About from './compontes/About';
 import Contacts from './compontes/Contacts';
 import Complex from './Complex';
 import Deatils from './Deatils';
-import Form from './Form'
+import Form from './Form';
 import './App.css';
-
+import Footer from './Footer';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/Deatils" element={<Deatils/>} />
         <Route path="/Form" element={<Form/>} />
       </Routes>
-      
+      <Footer/>
     </div>
   );
 }

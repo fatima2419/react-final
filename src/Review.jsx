@@ -65,7 +65,7 @@ export default function Review() {
   };
 
   return (
-    <div className="quote-slider" style={{textAlign:'right', marginTop:'3%',color:' rgba(35, 135, 192)'}}>
+    <div className="quote-slider" style={{textAlign:'center', marginTop:'3%',color:' rgba(35, 135, 192)'}}>
       <div className="quote-container" style={{ transform: `translateX(-${currentQuoteIndex * 100}%)` }}>
         {quotes.map((quote, index) => (
           <div key={index} className="quote">
@@ -74,7 +74,7 @@ export default function Review() {
           </div>
         ))}
       </div>
-      <div>
+      <div style={{textAlign:'center',alignItems:'right'}}>
         {/* Review Input Form */}
         <input
           type="text"
@@ -89,7 +89,7 @@ export default function Review() {
           value={userReview}
           onChange={handleUserReviewChange}
         />
-        <button onClick={handleUserReviewSubmit}>إرسال تقييمك</button>
+        <button className="button2" onClick={handleUserReviewSubmit}>إرسال تقييمك</button>
       </div>
     </div>
   );
