@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { blue } from "@mui/material/colors";
 
 export default function Review() {
-  const [userName, setUserName] = useState(''); // Step 1
+  const [userName, setUserName] = useState(''); 
   const [userReview, setUserReview] = useState(''); // Step 1
   const [quotes, setQuotes] = useState([ // Use useState to manage the quotes array
     {
@@ -34,7 +33,7 @@ export default function Review() {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  },);
 
   const handleUserNameChange = (e) => {
     setUserName(e.target.value);
