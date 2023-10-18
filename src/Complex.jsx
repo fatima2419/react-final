@@ -70,7 +70,6 @@ export default function Complex() {
           </div>
         );
       })}
-      
     </div>
   );
 }

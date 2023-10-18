@@ -421,7 +421,7 @@ border: #486284;
   
 }
 .contact-form-container {
-  background: linear-gradient(220deg, rgba(170, 212, 236, 0.38) 4.14%, #99c6d4 57.08%);
+  background: linear-gradient(220deg, rgba(195, 211, 220, 0.38) 4.14%, #d2d4d5 57.08%);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -430,4 +430,55 @@ border: #486284;
   align-items: center;
 
 }
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+ }
+ .quote-slider {
+  width: 300px; /* Adjust the width as needed */
+  overflow: hidden;
+  position: relative;
+}
 
+.quote-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.quote {
+  flex: 0 0 100%; /* Make each quote take up the full width */
+}
+
+.quote.active {
+  opacity: 1;
+}
+
+.quote-slider .quote-container {
+  transform: translateX(calc(-100% * var(--quote-index, 0)));
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for the submit button */
+button {
+  background-color: #2273c0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hover effect for the button */
+button:hover {
+  background-color: #145a9e;
+}

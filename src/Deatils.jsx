@@ -3,12 +3,10 @@ import { useLocation } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Dropdown from 'react-bootstrap/Dropdown';
-import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
-import MyForm from './Form'; // Import your contact form component
-import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
-import { useMemo } from "react";
-export default function Details(props) {
+import MyForm from './Form';
+import Map from './Map'
+import Review from './Review'
+const Details = (props)=> {
   const location = useLocation();
   const prop = location.state;
 
@@ -18,13 +16,17 @@ export default function Details(props) {
     listStyle: 'none',
   };
 
+  const latitude = prop.N;
+  const longitude =prop.E; 
+console.log(prop.N)
+
   return (
     <div>
       <div className="container">
         <div className="row">
           <div className="col-md-4">
             <Card>
-              <Card.Body>
+              <Card.Body style={{ textAlign: "right" }}>
                 <h1>{prop.name}</h1>
                 <p>معلومات إضافية:</p>
                 <p>{prop.phone}</p>
@@ -43,11 +45,7 @@ export default function Details(props) {
                     ))}
                   </Dropdown.Menu>
                 </Dropdown>
-                <Link to="/Top3" state={prop}>
-                  <Button variant="contained" color="primary" style={{ margin: '1%' }}>
-                    Go to Top3
-                  </Button>
-                </Link>
+                <Review/>
               </Card.Body>
             </Card>
           </div>
@@ -82,18 +80,14 @@ export default function Details(props) {
           <div className="col-md-8">
             <MyForm />
           </div>
-          <div className='col-md-4'>
+          <div className="col-md-4">
             <h5>موقع المجمع السكني</h5>
-            {/* Integrate your Google Maps component and pass the location prop */}
-            {/* <Map
-              google={props.google}
-              initialCenter={{ lat: prop.N, lng: prop.E }}
-            >
-              <Marker
-                name={prop.name}
-                position={{ lat: prop.N, lng: prop.E }}
-              />
-            </Map> */}
+            <div className="map" style={{ width: '100%', height: '400px' }}>
+            
+            <Map latitude={latitude} longitude={longitude} />
+
+            
+            </div>
           </div>
         </div>
       </div>
@@ -101,3 +95,4 @@ export default function Details(props) {
   );
 }
 
+export default Details;

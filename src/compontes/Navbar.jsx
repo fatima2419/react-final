@@ -20,7 +20,7 @@ export default function CustomNavbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 50) {
         setNavbarBackground('white');
       } else {
         setNavbarBackground('transparent');
@@ -40,7 +40,7 @@ export default function CustomNavbar() {
         <img src={logoo} alt="Logo" width="30" height="30" style={logoStyle} />
         <span className="ml-2">COMPLEX.IQ</span>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" variant="dark" />
       <Navbar.Collapse id="responsive-navbar-nav" bg="dark">
         <Nav className="mx-auto">
           <Nav.Link as={Link} to="/Firstoage" className="text-dark">
@@ -49,9 +49,9 @@ export default function CustomNavbar() {
           <Nav.Link as={Link} to="/About" className="text-dark">
             About
           </Nav.Link>
-          <Nav.Link as={Link} to="/Top3" className="text-dark">
+          {/* <Nav.Link as={Link} to="/Top3" className="text-dark">
             Top
-          </Nav.Link>
+          </Nav.Link> */}
           <Nav.Link as={Link} to="/Complex" className="text-dark">
             Complex
           </Nav.Link>
