@@ -21,7 +21,7 @@ export default function Complex() {
     });
   }, []);
 
-  return (
+  return (<>
     <div className='call'>
       {complexData.map((complex) => {
         let prop = {
@@ -71,5 +71,6 @@ export default function Complex() {
         );
       })}
     </div>
+    </>
   );
 }

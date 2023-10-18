@@ -20,7 +20,7 @@ const Details = (props)=> {
   const longitude =prop.E; 
 console.log(prop.N)
 
-  return (
+  return (<>
     <div>
       <div className="container">
         <div className="row">
@@ -89,6 +89,7 @@ console.log(prop.N)
         </div>
       </div>
     </div>
+    </>
   );
 }
 

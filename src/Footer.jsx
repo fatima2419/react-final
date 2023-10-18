@@ -10,7 +10,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 export default function Footer() {
   return (
-    <footer>
+    <div className="footer">
       <div className="contacts-container2">
       <div className="info2">
  
@@ -53,6 +53,6 @@ export default function Footer() {
 
 
       </div>
-    </footer>
+    </div>
   );
 }

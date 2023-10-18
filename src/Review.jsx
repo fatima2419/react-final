@@ -29,7 +29,7 @@ export default function Review() {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextQuote, 5000); // Change the quote every 5 seconds
+    const interval = setInterval(nextQuote, 5000);
 
     return () => {
       clearInterval(interval);
@@ -64,7 +64,7 @@ export default function Review() {
     }
   };
 
-  return (
+  return (<>
     <div className="quote-slider" style={{textAlign:'center', marginTop:'3%',color:' rgba(35, 135, 192)'}}>
       <div className="quote-container" style={{ transform: `translateX(-${currentQuoteIndex * 100}%)` }}>
         {quotes.map((quote, index) => (
@@ -92,5 +92,6 @@ export default function Review() {
         <button className="button2" onClick={handleUserReviewSubmit}>إرسال تقييمك</button>
       </div>
     </div>
+    </>
   );
 }

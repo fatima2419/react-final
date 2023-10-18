@@ -4,7 +4,7 @@ import slide from "./11.jpeg";
 import locations from "./Group 34.png";
 
 export default function about() {
-  return (<>
+  return (<div>
     <div className="container">
       <div className="about">
         <div className="imgabout">
@@ -95,11 +95,8 @@ export default function about() {
         </p>
       </div>
    
-      <div className="t3">
-
-      </div>
     </div>
     </div>
-    </>
+    </div>
   );
 }

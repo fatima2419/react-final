@@ -423,11 +423,16 @@ border: #486284;
   align-items: center;
 
 }
-.footer {
-  position: fixed;
+
+ .footer {
+
+  color: #fff;
+
   bottom: 0;
   width: 100%;
- }
+
+}
+
  .quote-slider {
   width:100%;
   overflow: hidden;
