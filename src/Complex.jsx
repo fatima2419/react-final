@@ -36,6 +36,7 @@ export default function Complex() {
           location: complex.location,
           N:complex.N,
           E: complex.E,
+          num:complex.numberOfBuildings,
         };
 
         return (

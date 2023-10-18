@@ -29,10 +29,10 @@ console.log(prop.N)
               <Card.Body style={{ textAlign: "right" }}>
                 <h1>{prop.name}</h1>
                 <p>معلومات إضافية:</p>
-                <p>{prop.phone}</p>
-                <p>{prop.email}</p>
-                <p>{prop.location}</p>
-
+                <p> {prop.phone} : رقم المبيعات </p>
+                <p>{prop.email} : الايميل </p>
+                <p> موقع المجمع : {prop.location} </p>
+                <p>{prop.num} : عدد البنايات في المجمع </p>
                 <Dropdown>
                   <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                     اوقات العمل
