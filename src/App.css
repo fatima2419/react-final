@@ -1,5 +1,8 @@
+
+*{  font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;}
 body{
   background-color:#FBFBFB ;
+  font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;
   
 }
 
@@ -108,9 +111,11 @@ font-weight: 500;
 line-height: 160%;
 
 }
+.btn {font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;}
+
 
 .book, .see{
- 
+  font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;
   flex: 1;
   color: #486284;
   text-transform: uppercase;
@@ -503,3 +508,21 @@ justify-content: center;
  font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;
 
 }
+h3{
+ 
+  font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;
+  text-align: right;
+}
+
+.content p{
+  text-align: right;
+  font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;
+}
+.button1{
+  font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;}
+
+  .mini{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }

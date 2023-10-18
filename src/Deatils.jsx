@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Dropdown from 'react-bootstrap/Dropdown';
-
+import Footer from './Footer'
 import Map from './Map'
 import Review from './Review'
 const Details = (props)=> {
@@ -16,8 +16,7 @@ const Details = (props)=> {
     listStyle: 'none',
   };
 
-  const latitude = prop.N;
-  const longitude =prop.E; 
+
 console.log(prop.N)
 
   return (<>
@@ -81,7 +80,7 @@ console.log(prop.N)
         <div  className="col-md-6">  <Review/></div>
           <div className="col-md-6">
             <div className="map" style={{ width: '100%', height: '50%' }}>
-            <Map latitude={latitude} longitude={longitude} />
+            <Map lat={prop.N} lng={prop.E} />
           
             </div>
           
@@ -89,6 +88,7 @@ console.log(prop.N)
         </div>
       </div>
     </div>
+    <Footer/>
     </>
   );
 }

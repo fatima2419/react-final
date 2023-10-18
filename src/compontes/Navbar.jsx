@@ -40,7 +40,11 @@ export default function CustomNavbar() {
         <img src={logoo} alt="Logo" width="30" height="30" style={logoStyle} />
         <span className="ml-2">COMPLEX.IQ</span>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" variant="dark" />
+      <Navbar.Toggle
+        aria-controls="responsive-navbar-nav"
+        variant="dark"
+        className="custom-navbar-toggle" // Add custom class for dark background
+      />
       <Navbar.Collapse id="responsive-navbar-nav" bg="dark">
         <Nav className="mx-auto">
           <Nav.Link as={Link} to="/Firstoage" className="text-dark">
@@ -49,9 +53,6 @@ export default function CustomNavbar() {
           <Nav.Link as={Link} to="/About" className="text-dark">
             About
           </Nav.Link>
-          {/* <Nav.Link as={Link} to="/Top3" className="text-dark">
-            Top
-          </Nav.Link> */}
           <Nav.Link as={Link} to="/Complex" className="text-dark">
             Complex
           </Nav.Link>
@@ -60,7 +61,7 @@ export default function CustomNavbar() {
           </Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link onClick={handleLoginClick} className="btn btn-light  custom-btn">
+          <Nav.Link onClick={handleLoginClick} className="btn btn-light custom-btn">
             CONTACT OUR SALES TEAM
           </Nav.Link>
         </Nav>
