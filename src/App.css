@@ -1,5 +1,5 @@
 
-*{  font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;}
+*{  font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif  !important;}
 body{
   background-color:#FBFBFB ;
   font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;
