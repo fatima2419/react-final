@@ -75,20 +75,19 @@ console.log(prop.N)
             </ul>
           </div>
         </div>
-        <div className="row">
+        <div>
+        <div className="row2">
         
-        <div  className="col-md-6">  <Review/></div>
-          <div className="col-md-6">
-            <div className="map" style={{ width: '100%', height: '50%' }}>
-            <Map lat={prop.N} lng={prop.E} />
-          
+        <div  className="col-md-5">  <Review/></div>
+          <div className="col-md-7">
+            <div className="map" style={{ width: '100%', height: '100%' }}>
+            <Map lat={prop.N} lng={prop.E}  />
             </div>
-          
           </div>
+        </div>
         </div>
       </div>
     </div>
-    <Footer/>
     </>
   );
 }

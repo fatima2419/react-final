@@ -14,7 +14,8 @@ export default function Contacts() {
       <div className="contacts-container">
         <div className="info">
           <div>
-            <h7>genral idea of the project</h7>
+            <h7>Reach us on social media </h7>
+            <br></br>
             <p>
             "كومبليكس" هو مصدر مفيد لأولئك الذين يبحثون عن منزل جديد للعيش في مناطق مختلفة من بغداد. يقدم الموقع معلومات مفصلة ومفيدة عن مجمعات السكن ويساعد الأفراد في اتخاذ قرارات مستنيرة بشأن اختيار المنزل المناسب لهم.
             </p>

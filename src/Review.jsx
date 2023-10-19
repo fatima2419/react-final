@@ -64,7 +64,7 @@ export default function Review() {
   };
 
   return (<>
-    <div className="quote-slider" style={{textAlign:'center', marginTop:'3%',color:' rgba(35, 135, 192)'}}>
+    <div className="quote-slider" style={{textAlign:'center', marginTop:'3%',color:' rgba(35, 135, 192)', backgroundColor:'blur'}}>
       <div className="quote-container" style={{ transform: `translateX(-${currentQuoteIndex * 100}%)` }}>
         {quotes.map((quote, index) => (
           <div key={index} className="quote">

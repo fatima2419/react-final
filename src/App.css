@@ -503,7 +503,7 @@ button:hover {
   background: linear-gradient(220deg, rgba(35, 135, 192, 0.38) 4.14%, #486284 57.08%);
 box-shadow: 0px 10px 15px 0px rgba(151, 151, 151, 0.12);
 width: 100%;
-z-index: -1;
+z-index: 1;
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -628,6 +628,15 @@ width: 100%;
     justify-content: center;
   
   }
+  .row2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    background-color: #2274c02d;
+    padding: 3%;
+    border-radius: 10%;
+  
+  }
 }
 .social-media-icons{
   align-items:center;
@@ -644,6 +653,15 @@ max-width: 100vw;
 
 }
 
+.row2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  background-color: #2274c02d;
+  padding: 3%;
+  border-radius: 10%;
+
+}
 /* Responsive styles for smaller screens (e.g., mobile devices) */
 
 
