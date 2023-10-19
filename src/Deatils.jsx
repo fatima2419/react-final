@@ -6,7 +6,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import Footer from './Footer'
 import Map from './Map'
 import Review from './Review'
-const Details = (props)=> {
+const Deatils = (props)=> {
   const location = useLocation();
   const prop = location.state;
 
@@ -93,4 +93,4 @@ console.log(prop.N)
   );
 }
 
-export default Details;
+export default Deatils;

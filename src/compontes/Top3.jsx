@@ -7,16 +7,6 @@ export default function Top3() {
   return (
     <>
      <div className="seemore">
-    <h3>HOW TO CHOSE YOUR PERFECT COMPLEX</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, iste,
-      magnam molestiae
-      <br></br>exercitationem inventore suscipit maxime repellendus omnis
-      officia quibusdam sequi dolores.
-      <br></br>Ut fugiat beatae quasi praesentium architecto nihil
-      temporibus.
-    </p>
-    
     <div className="pro">
       <div>
         <img src={locations} alt="location" />

@@ -43,9 +43,9 @@ export default function CustomNavbar() {
       <Navbar.Toggle
         aria-controls="responsive-navbar-nav"
         variant="dark"
-        className="custom-navbar-toggle" // Add custom class for dark background
+        className="custom-navbar-toggle" 
       />
-      <Navbar.Collapse id="responsive-navbar-nav" bg="dark">
+      <Navbar.Collapse id="responsive-navbar-nav" >
         <Nav className="mx-auto">
           <Nav.Link as={Link} to="/Firstoage" className="text-dark">
             Home

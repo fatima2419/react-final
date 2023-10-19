@@ -27,7 +27,7 @@ export default function Firstoage() {
                 </Link>
                 <Link to="/Form">
                 
-                <button className="btn btn-secondary see">تواصل ويانا</button>
+                <button className="btn btn-primary see">تواصل ويانا</button>
                 </Link>
 
               </div>
