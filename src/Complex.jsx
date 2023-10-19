@@ -9,7 +9,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
-
+import CircularProgress from '@mui/material/CircularProgress';
 export default function Complex() {
   const [complexData, setComplexData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -24,7 +24,12 @@ export default function Complex() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+
+    return (
+      <div className="loading-spinner">
+        <CircularProgress size={100} color="primary" />
+      </div>
+    );
   }
 
   return (<>
