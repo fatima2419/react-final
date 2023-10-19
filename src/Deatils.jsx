@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Dropdown from 'react-bootstrap/Dropdown';
-import Footer from './Footer'
 import Map from './Map'
 import Review from './Review'
 const Deatils = (props)=> {
