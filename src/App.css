@@ -177,6 +177,7 @@ margin-top: 10%;
   background: #FBFBFB;
   width: 100%;
   height: 1000px;
+  margin-top: 10%;
  
  }
 
@@ -198,6 +199,20 @@ padding-bottom: 5%;
 .chose{
   font-family: 'Cairo', 'Cairo Play', 'Roboto', sans-serif;}
 
+.chose h3{
+  font-size: 48px;
+  color: #145a9e;
+}
+.chose p{
+  text-align: right;
+  color: #929294;
+  font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+padding-top: 5%;
+}
 .imgabout{
   
   position: absolute;
@@ -231,18 +246,9 @@ padding-top: 5%;
 padding-bottom: 5%;
 
 }
-.pro{
-  display: flex;
-  flex-direction: row;
-  margin-left: 5%;
-  margin-right: 5%;
-} 
-.firsttop{
-  display: flex;
-  flex-direction: row;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;}
+
+
+
 h4{
   flex: 1;
   color: #486284;
@@ -637,6 +643,15 @@ width: 100%;
     border-radius: 10%;
   
   }
+  .cmg{
+    margin-top: 10%;
+  }
+  .call{
+    margin-top: 15%;
+  }
+.form-wrapper{
+  margin: 5%;
+}
 }
 .social-media-icons{
   align-items:center;
@@ -648,7 +663,6 @@ max-width: 100vw;
 .emoji{
   margin: 10%;
   margin: 50%;
-
   max-width: 100%;
 
 }
@@ -662,8 +676,9 @@ max-width: 100vw;
   border-radius: 10%;
 
 }
-/* Responsive styles for smaller screens (e.g., mobile devices) */
-
-
-/* Additional responsive styles can be added as needed */
-
+.loading-spinner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

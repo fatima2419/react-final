@@ -53,7 +53,7 @@ export default function Complex() {
             };
 
             return (
-              <Grid item xs={12} sm={6} key={complex.id}>
+              <Grid item xs={12} sm={6} key={complex.id} className='cmg'>
                 <Card>
                   <CardMedia
                     component="img"
@@ -81,9 +81,9 @@ export default function Complex() {
           })}
         </Grid>
       </div>
-  
     </div>
     <Footer />
+  
     </>
   );
 }
