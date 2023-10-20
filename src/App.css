@@ -138,13 +138,13 @@ margin-top: 10%;
 }
 
 .book {
-  background: rgba(35, 135, 192, 0.38); /* Background color with transparency */
-  border: none; /* Border with transparency */
+  background: rgba(35, 135, 192, 0.38);
+  border: none; 
 }
 
 .see {
-  background-color:  rgba(118, 129, 136, 0.38); /* Transparent background color */
-  border: none; /* No border */
+  background-color:  rgba(118, 129, 136, 0.38); 
+  border: none; 
 }
  .pro{
   display:flex;
@@ -176,7 +176,7 @@ margin-top: 10%;
  .container{
   background: #FBFBFB;
   width: 100%;
-  height: 1000px;
+  height: 100%;
   margin-top: 10%;
  
  }
@@ -569,7 +569,7 @@ width: 100%;
   }
  
 }
-/* Default styles for larger screens */
+
 .imgabout {
   position: absolute;
   width: 50%;
@@ -595,7 +595,7 @@ width: 100%;
   mix-blend-mode: multiply;
 }
 
-/* Responsive styles for smaller screens (e.g., mobile devices) */
+
 @media (max-width: 768px) {
   .imgabout {
     max-width: 100%;
@@ -604,7 +604,16 @@ width: 100%;
     margin: 0 auto;
     right: auto;
   }
-
+  .caro h3{
+    font-size: 30px;
+  }
+.caro{
+ width: 100%;
+ height: 60%;
+}
+.pap{
+  height: 400px;
+}
   .about {
     padding: 3%;
     max-width: 100%;
@@ -672,4 +681,15 @@ max-width: 100vw;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+.caro h3{
+  text-align: center;
+  font-size: 50px;
+  color: #486284;
+margin-bottom: 4%;}
+
+.pap{
+  height: 700px;
+   width: 80%;
+    margin: 0 auto;
 }
