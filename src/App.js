@@ -1,3 +1,4 @@
+import React from 'react';
 import { Routes,Route } from 'react-router-dom';
 import Firstoage from './compontes/Firstoage';
 import Navbar from './compontes/Navbar';
@@ -7,7 +8,7 @@ import Complex from './Complex';
 import Deatils from './Deatils';
 import Form from './Form';
 import './App.css';
-
+import Top3 from './compontes/Top3'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="Contacts/*" element={<Contacts/>} />
         <Route path="/Deatils" element={<Deatils/>} />
         <Route path="/Form" element={<Form/>} />
+        <Route path="/Top3" element={<Top3/>} />
       </Routes>
     
     </div>

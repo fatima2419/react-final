@@ -226,12 +226,15 @@ padding-top: 5%;
 .seemore{
 text-align: center;
 background: #FBFBFB;
-
+margin-top: 4%;
 }
 .seemore h3{
   font-size: 35px;
   color: #486284;
-
+  width: 100%;
+justify-content: center;
+align-items: center;
+text-align: center;
  }
 
 .seemore p{
@@ -331,21 +334,9 @@ justify-content: center;
   .firsttop h4 {
     font-size: 28px;
   }
-  .content p,
-  .about p,
-  .seemore p {
-    font-size: 14px;
-  }
+  
 
-
-  .pro,
-  .firsttop {
-    flex-direction: column;
-  }
-  .pro h4,
-  .firsttop h4 {
-    font-size: 24px;
-  }
+ 
 
   .imgabout,
   .pic1 {

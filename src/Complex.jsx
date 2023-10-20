@@ -10,6 +10,7 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import CircularProgress from '@mui/material/CircularProgress';
+
 export default function Complex() {
   const [complexData, setComplexData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -37,7 +38,7 @@ export default function Complex() {
       <div className="call">
         <Grid container spacing={3}>
           {complexData.map((complex) => {
-            let prop = {
+            const prop = {
               name: complex.name,
               photoo: complex.photoo,
               photo: complex.photo,
@@ -79,9 +80,12 @@ export default function Complex() {
               </Grid>
             );
           })}
+          
         </Grid>
+        
       </div>
     </div>
+    
     <Footer />
   
     </>
